@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("png/mando.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding-right: 10px;
+}
+
+h1{
+    color: white;
+    font-size: 75px;
+    font-family: sans-serif;
+}
+
+.menu ol li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menu ol li {
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+.menu ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;  
+}
+
+.menu{
+    background-color: black;
+    height: 50px;
+}
+
+#volver{
+	position: fixed;
+	top: 10.5%;
+	right: 2%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	padding: 2px;
+}
+
+#contenido {
+    background: linear-gradient(black, lightgrey);
+    background-repeat: no-repeat;
+    height: 100%;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+.articulo{
+    background-color:white;
+    color: black;
+   padding:30px;
+   width: 70%;
+   min-height: auto;
+   max-height: auto;
+   border: 1px solid black;
+   margin: 5px;
+   text-align: justify;
+   display: flex;
+   flex-direction: column;
+
+}
+
+h2{
+    padding: 10px;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    border: 1px solid white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+
+}
+
+#f122{
+    background-image: url("png/f122r.png");
+}
+
+#gow4{
+    background-image: url("png/gow1.png");
+
+}
+
+#dsr{
+    background-image: url("png/dmrb.png");
+
+}
+
+#nba{
+    background-image: url("png/nba.png");
+}
+
+#cs{
+    background-image: url("png/cities\ skylines.png");
+
+}
+
+#rdr{
+    background-image: url("png/rdr3.png");
+}
+
+#codm{
+    background-image: url("png/cod2.png");
+}
+
+#b4{
+    background-image: url("png/bt4.png");
+
+}
+
+#er{
+    background-image: url("png/er.png");
+
+}
+
+#nfs{
+    background-image: url("png/nfs.png");
+}
+
+.info{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.parrafo{ 
+    width: 60%;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid white;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+}
+.video{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+/*Media querys*/
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  @media only screen and (max-width:768px) {
+
+    .articulo{
+       width: 90%;
+       background-color: black;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+    .parrafo{ 
+        width: 100%;
+    }
+
+    .menu{
+        height: 150px;
+    }
+
+    .menu ol{
+        flex-wrap: wrap;
+    }
+    #volver{
+        top: 10.5%;
+        right: 10%;
+    }
+    
+
+    .video{
+        height: 200px;
+    }
+    
+    
+  }
+
+
